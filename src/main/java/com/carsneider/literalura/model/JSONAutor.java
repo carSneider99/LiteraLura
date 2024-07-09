@@ -5,6 +5,6 @@ import com.fasterxml.jackson.annotation.JsonAlias;
 public record JSONAutor(
         String name,
         @JsonAlias("birth_year") int birthYear,
-        @JsonAlias("death_year") int death_year
+        @JsonAlias("death_year") int deathYear
 ) {
 }
