@@ -1,9 +1,7 @@
 package com.carsneider.literalura.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.core.ObjectCodec;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ObjectReader;
 
 import java.io.IOException;
 import java.net.URI;

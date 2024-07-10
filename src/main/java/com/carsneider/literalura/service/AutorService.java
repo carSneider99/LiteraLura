@@ -49,4 +49,12 @@ public class AutorService {
     public List<Autor> listarTodosLosAutores(){
         return autorRepository.findAll();
     }
+
+    public List<Autor> listarAutoresVivos(int year){
+        return autorRepository.findByFechaNacimientoLessThanEqualAndFechaFallecimientoGreaterThanEqual(year,year);
+    }
+
+    public List<Libro> listarPorIdioma(String idioma){
+        return libroRepository.findByIdioma(idioma);
+    }
 }

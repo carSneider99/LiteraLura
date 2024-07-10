@@ -19,7 +19,7 @@ public class LiteraluraApplication implements CommandLineRunner {
 	}
 
 	@Override
-	public void run(String... args) throws Exception {
+	public void run(String... args) {
 		PrincipalBooks principalBooks = new PrincipalBooks(autorService);
 		principalBooks.mostrarMenu();
 	}

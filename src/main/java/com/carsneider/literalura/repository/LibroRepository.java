@@ -8,4 +8,6 @@ import java.util.Optional;
 
 public interface LibroRepository extends JpaRepository<Libro, Integer> {
     Optional<Libro> findByTituloIgnoreCaseAndAutorId(String titulo, Integer autorId);
+
+    List<Libro> findByIdioma(String idioma);
 }
